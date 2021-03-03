@@ -12,7 +12,7 @@ class AWS:
         
     def getValues(self):
         # return self.values[:]        
-        return self.values
+        return self.values[:]
 
     def __str__(self):
         return "AWS [values=" + str(self.values) + "]"
