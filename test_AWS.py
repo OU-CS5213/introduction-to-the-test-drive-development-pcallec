@@ -25,7 +25,15 @@ class AWSTest(unittest.TestCase):
             print("Exception happened")
             
     def test_GetValues(self):
-        self.assertFalse(True)
+        temp = self.originalAWS.getValues()
+        # Changing assigned new value
+        temp[0] = 100
+        
+        actual = self.original
+        stored = self.originalAWS.getValues()
+        
+        self.assertEqual(actual[0], stored[0])
+
         
     def test_str(self):
         self.assertFalse(True)
