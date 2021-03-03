@@ -2,6 +2,8 @@
 **Worke done without commits to GitHub will not be graded.**
 
 Try to *check* the *checkboxes* as you go, and commit changes to the Readme.md as well.
+## Part 0
+* (✓) Convert to Python 3
 
 ## Part 1
 There are a few tests that are not finished. And so, you will have a few tasks here.
