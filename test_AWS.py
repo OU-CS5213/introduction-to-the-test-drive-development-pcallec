@@ -86,7 +86,18 @@ class AWSTest(unittest.TestCase):
         self.assertEqual(aws_after_remove[5], self.FILLER_VALUE)
         self.assertEqual(aws_after_remove[6], self.FILLER_VALUE)
 
+    def test_stepMultiplier(self):
+        list_mult = [1, 5, 15, 64, 150]
         
+        aws_list_mult = AWS(list_mult)
+        aws_list_mult.stepMultiplier()
+        
+        aws_after_remove = aws_list_mult.getValues()
+               
+        expected = [2, 10, 60, 6400, 150]
+                
+        self.assertEqual(expected, aws_after_remove )
+       
 
 if __name__ == '__main__':
     unittest.main()
