@@ -66,4 +66,16 @@ class AWS:
                 count_bigger+=1
         
         return count_bigger
+    
+    def stepMultiplier(self):
+        #         < 10   *2
+        # 10 <= x < 20   *4
+        # 20 <= x < 100  *100
         
+        for i in range( len(self.values) ):
+            if (self.values[i] < 10):
+                self.values[i] = self.values[i]*2
+            elif ( self.values[i] >= 10 and self.values[i] < 20):
+                self.values[i] = self.values[i]*4
+            elif ( self.values[i] >= 20 and self.values[i] < 100):
+                self.values[i] = self.values[i]*100
