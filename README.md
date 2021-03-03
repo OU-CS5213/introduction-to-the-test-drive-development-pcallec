@@ -10,8 +10,8 @@ There are a few tests that are not finished. And so, you will have a few tasks h
 You will make frequent commits:
 * (✓) Create one test, and make sure it fails
 * (✓) Commit to GitHub
-* Write your code to pass the test
-* Commit to GitHub
+* (✓) Write your code to pass the test
+* (✓) Commit to GitHub
 ## Part 2
 * [ ] Create a GitHub action to run your tests from Part 1
 ## Part 3 
