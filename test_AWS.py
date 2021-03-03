@@ -68,6 +68,23 @@ class AWSTest(unittest.TestCase):
         self.assertEqual(expectedValue, c)
         
         self.assertEqual(first, result[0])
+        
+    def test_removeBiggerThan(self):
+        list_1 = [0,1,2,3,4,5,6]
+        aws_list1 = AWS(list_1)
+        
+        threshold = 3
+        
+        n_remove = aws_list1.removeBiggerThan(threshold)
+                
+        aws_after_remove = aws_list1.getValues()
+
+        self.assertEqual(n_remove, 3)
+        self.assertEqual(aws_after_remove[4], self.FILLER_VALUE)
+        self.assertEqual(aws_after_remove[5], self.FILLER_VALUE)
+        self.assertEqual(aws_after_remove[6], self.FILLER_VALUE)
+
+        
 
 if __name__ == '__main__':
     unittest.main()
