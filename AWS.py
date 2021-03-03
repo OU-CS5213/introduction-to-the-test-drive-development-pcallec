@@ -55,3 +55,15 @@ class AWS:
             newArray[i+x] = self.values[i]
 
         self.values = newArray[:]
+        
+    def removeBiggerThan(self,threshold):
+        
+        count_bigger = 0
+        
+        for i in range( len(self.values) ):
+            if (self.values[i] > threshold):
+                self.values[i] = self.FILLER_VALUE
+                count_bigger+=1
+        
+        return count_bigger
+        
