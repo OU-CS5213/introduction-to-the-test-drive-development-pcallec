@@ -1,0 +1,7 @@
+/AWS.class
+/AWSTest.class
+/test.class
+
+__pycache__/
+.classpath
+.project
