@@ -36,7 +36,9 @@ class AWSTest(unittest.TestCase):
 
         
     def test_str(self):
-        self.assertFalse(True)
+        actual = str(self.originalAWS)
+        expected = 'AWS [values=[1, 2, 3]]'
+        self.assertEqual(actual, expected)
         
     def test_AWS(self):
         expected = [1,2,3]

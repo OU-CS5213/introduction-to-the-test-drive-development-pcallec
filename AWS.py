@@ -15,7 +15,7 @@ class AWS:
         return self.values[:]
 
     def __str__(self):
-        return "AWS [values=" + str(self.values) + "]"
+        return "WS [values=" + str(self.values) + "]"
 
     def remove(self,i):
         value = self.FILLER_VALUE
